@@ -7,15 +7,17 @@
 :root{
     --primary-color: white;
     --secondary-color:black;
+    --button:#0061FF;
     --dark: gray;
     --light: #B4D0E7;
     --col100:orange;
     --col_60:yellow;
-    --col50:red;
+   
     --col40:pink;
     --col30:purple;
     --row:blue;
     --col_20:green;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .row::after{
@@ -24,6 +26,10 @@
   display: table;
 }
 
+a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
 
 /*margin, padding*/
 
@@ -58,6 +64,33 @@
     padding-left: 2rem;
 }
 
+/*header*/
+
+ul{
+    display: inline-block;
+}
+
+ul li, .logo{
+    display: inline-block;
+    padding-right: 2rem;
+}
+
+.logo{
+    vertical-align: middle;
+}
+
+.right_text{
+    text-align: right;
+}
+
+/*button*/
+.button{
+    color: var(--primary-color);
+    background-color: var(--button) ;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+
+}
 
 /*grid*/
 
@@ -78,7 +111,7 @@
 
 .col_50{
     float:left;
-    height: 50px;
+    
     background-color: var(--col50); 
     width: 50%;   
 }
