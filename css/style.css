@@ -23,10 +23,8 @@
   display: table;
 }
 
-.row{
-    background-color: var(--row);
-}
 
+/*margin, padding*/
 
 .margin_xl{
     width: 1600px;
@@ -54,6 +52,12 @@
 .padding{
     padding: 2rem;
 }
+
+.padding_left{
+    padding-left: 2rem;
+}
+
+
 /*grid*/
 
 .col_100{
@@ -76,6 +80,7 @@
     width: 50%;
     background-color: var(--col50);
     height: 50px;
+    
 }
 
 .col_40{
@@ -97,4 +102,10 @@
     height: 700px;
 }
 
+.calc{
+    width: calc(50% - 2rem*2);
+}
 
+.margin>.col_50{
+    height: 500px;
+}
