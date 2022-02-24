@@ -9,9 +9,11 @@
     --secondary-color:black;
     --dark: gray;
     --light: #B4D0E7;
+    --col100:orange;
     --col_60:yellow;
     --col50:red;
     --col40:pink;
+    --col30:purple;
     --row:blue;
 }
 
@@ -26,8 +28,14 @@
 }
 
 
-.margin{
+.margin_xl{
     width: 1600px;
+    margin: 0 auto;
+    padding: 5rem;
+}
+
+.margin{
+    width: 1400px;
     margin: 0 auto;
     padding: 5rem;
 }
@@ -36,10 +44,24 @@
     margin-top: 5rem;
 }
 
+.margin_top2{
+    margin-top: 2rem;
+}
+.margin_right{
+    margin-right: 2rem;
+}
+
 .padding{
     padding: 2rem;
 }
 /*grid*/
+
+.col_100{
+    float: left;
+    background-color: var(--col100);
+    width: calc(100% - 2rem*2);
+    height: 200px;  
+}
 
 .col_60{
     float: left;
@@ -61,6 +83,13 @@
     background-color: var(--col40);
     height: 200px;
     width: 40%;
+}
+
+.col_30{
+    float: left;
+    background-color: var(--col30);
+    height: 700px;
+    width: 30%;
 }
 
 .bg_blue{
