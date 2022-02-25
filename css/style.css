@@ -9,7 +9,7 @@
     --secondary-color:black;
     --button:#0061FF;
     --dark: gray;
-    --light: #B4D0E7;
+    --light: #dddddd;
     --col100:orange;
     --row:blue;
     --col_20:green;
@@ -22,6 +22,29 @@
     clear: both;
     display: table;
 }
+/*background*/
+.bg_blue{
+    background-color: var(--light);
+}
+
+/*text*/
+
+
+
+nav> ul, nav> ul li , .logo{
+    display: inline-block;
+    padding-right: 2rem;
+}
+
+ul li{
+    list-style: none;
+}
+
+
+
+.right_text{
+    text-align: right;
+}
 
 a{
     text-decoration: none;
@@ -31,8 +54,13 @@ a{
 p{
     line-height: 1.5rem;
 }
+
 h1{
     font-size: 4.5rem;
+}
+
+h2{
+    font-size: 2.5rem;
 }
 
 .font_light{
@@ -40,29 +68,46 @@ h1{
     margin-top: 1rem;
 }
 
-#chat_img>img{
-    height: 500px;
-}
-
-
 .fa-arrow-down{
     margin-top: 1rem;
     font-size: 3rem;
 }
 
-/*margin, padding*/
+.gray_text{
+    color: var(--dark);
+    font-size: 0.8rem;
+}
 
-.margin_xl{
+.price_text{
+    margin-top: 1rem;
+}
+/*img*/
+
+#chat_img>img{
+    height: 500px;
+}
+
+.logo{
+    vertical-align: middle;
+}
+
+
+/*container*/
+
+.container_lg{
     width: 1300px;
     margin: 0 auto;
     padding: 5rem 0rem 0rem 0rem;
 }
 
-.margin{
-    width: 1300px;
+.container{
+    width: 1200px;
     margin: 0 auto;
     padding: 5rem;
 }
+
+/*margin, padding*/
+
 
 .margin_top{
     margin-top: 8rem;
@@ -87,25 +132,11 @@ h1{
     padding-right: 5rem;
 }
 
-
-/*header*/
-
-ul{
-    display: inline-block;
+.padding_lr{
+   padding: 10rem;
 }
 
-ul li, .logo{
-    display: inline-block;
-    padding-right: 2rem;
-}
 
-.logo{
-    vertical-align: middle;
-}
-
-.right_text{
-    text-align: right;
-}
 
 /*button*/
 .button{
@@ -113,7 +144,13 @@ ul li, .logo{
     background-color: var(--button) ;
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
+}
 
+.button_lg{
+    color: var(--primary-color);
+    background-color: var(--button) ;
+    padding: 0.5rem 3rem;
+    font-size: 0.9rem;
 }
 
 /*grid*/
@@ -165,7 +202,7 @@ ul li, .logo{
     width: 40%;
 }
 
-.margin>.col_30{
+.container>.col_30{
     
     background-color: var(--col30);
     height: 500px;
@@ -185,16 +222,38 @@ ul li, .logo{
     
     float: left;
     height: 200px;
+    width: 20%;
 
 }
 
-.bg_blue{
-    background-color: var(--light);
-    height: 700px;
+
+/*col border*/
+
+.border{
+    border: solid 0.5px var(--light);
+    font-size: 0.9rem;
+    line-height: 2rem;
+    font-weight: 600;
+    
 }
 
+.border_bottom{
+    border-bottom: solid 0.5px var(--light);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.content_plan{
+    padding: 1.25rem;
+    margin-right:-5rem;
+    width: 100%;
+}
 
 .bg_black{
     background-color: black;
     background-color: var(--col_20);
+}
+
+.ul_box-plan>li{
+    margin-top:1rem;
 }
