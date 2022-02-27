@@ -121,6 +121,10 @@ h4{
     font-size: 1.2rem;
 }
 
+h5{
+    font-size: 1rem;
+}
+
 .font_light{
     font-weight: 300;
     margin-top: 1rem;
@@ -165,7 +169,7 @@ h4{
 
 
 .central_logo>img{
-    width: 200px;
+    width: 150px;
 }
 
 .logo_box>img{
@@ -334,6 +338,7 @@ h4{
     text-align: center;
 }
 
+
 .divider{
     border-top: solid 0.5px var(--light);
     width: 20%;
@@ -347,8 +352,8 @@ h4{
 }
 
 .bg_black{
-    background-color: black;
-    background-color: var(--col_20);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .ul_box-plan>li{
@@ -372,3 +377,8 @@ h4{
     height: 100px;
 }
 
+.border_bottom_question{
+    border-bottom: solid 0.5px var(--light);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
