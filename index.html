@@ -93,11 +93,16 @@
                 <div class="row margin_top">
                     <section> 
                         <h2>Trova il piano Dropbox Business che fa per te</h2>
-                        <input type="radio" class="margin_top2" value="Fatturazione mensile">
-                        <label for="Fatturazione mensile">Fatturazione mensile</label>
-                        <input type="radio" class="margin_top2" value="Fatturazione annuale">
-                        <label for="Fatturazione mensile">Fatturazione annuale</label>
-                    
+                        <div class="margin_top2">
+                            <label>
+                                <input type="radio" class="radio" name="fatturazione annuale" value="1" checked>
+                                <span>Fatturazione mensile</span>
+                            </label>
+                            <label>
+                                <input type="radio" class="radio" name="Fatturazione annuale" value="2">
+                                <span>Fatturazione annuale</span>
+                            </label>
+                    </div>
                     </section>
 
                     <!-- single -->
@@ -122,9 +127,10 @@
                                 <a class="button_lg" href="#">Prova gratis per 30 giorni</a>
                                 <p class="margin_top2">oppure <a class="blue_link" href="#">acquista ora</a></p>
                             </div>
-                            
+                        
+                        <div class="divider margin_top2"></div>
                         </section>
-                        <div class="divider"></div>
+                        
                         <!-- pro -->
                         <section class="content_plan">
                             <h4>Punti salienti del Piano</h4>
@@ -159,8 +165,9 @@
                                 <p class="margin_top2">oppure <a class="blue_link" href="#">acquista ora</a></p>
                             </div>
                             
+                            <div class="divider margin_top2"></div>
                         </section>
-                        <div class="divider"></div>
+                       
                         <!-- pro -->
                         <section class="content_plan">
                             <h4>Punti salienti del Piano</h4>
@@ -197,8 +204,9 @@
                                 <p class="margin_top2">oppure <a class="blue_link" href="#">acquista ora</a></p>
                             </div>
                             
+                            <div class="divider margin_top2"></div>
                         </section>
-                        <div class="divider"></div>
+                        
                         <!-- pro -->
                         <section class="content_plan">
                             <h4>Punti salienti del Piano</h4>
@@ -355,9 +363,11 @@
         </div>
         
           
-        
+        <!-- Container with brand -->
         <div class="business row">
             <div class="margin_top2">
+
+                <!-- side cells -->
                 <div class="col_30 row">
                     <div class="col_50">
                         <div class="logo_box" id="bg_green">
@@ -383,64 +393,62 @@
             
                 <!-- Central bar -->
             <div class="col_30 bg_gray">
-            <div class="padding_lg">
-                <div class="central_logo">
-                    <img src="./img/designit.svg" alt="">
+                <div class="padding_lg">
+                    <div class="central_logo">
+                        <img src="./img/designit.svg" alt="">
+                    </div>
+                    <div class="divider margin_top2"></div>
+                    <p class="margin_top2">
+                        "I membri del nostro team lavorano costantemente in Paesi, fusi orari e uffici diversi. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox paper. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox Paper".
+                    </p>
+                    <p class="margin_top2">Morten Thomsen, Global IT Lead</p>
                 </div>
-                <div class="divider"></div>
-                <p>
-                    "I membri del nostro team lavorano costantemente in Paesi, fusi orari e uffici diversi. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox paper. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox Paper".
-                </p>
-                <p class="margin_top2">Morten Thomsen, Global IT Lead</p>
-            </div>
-            
-
             </div>
 
+            <!-- side cells -->
             <div class="col_30 row">
-            <div class="col_50">
-                <div class="logo_box" id="bg_red">
-                    <img src="./img/world_bicycle_relief.svg" alt="">
+                <div class="col_50">
+                    <div class="logo_box" id="bg_red">
+                        <img src="./img/world_bicycle_relief.svg" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="col_50">
-                <div class="logo_box" id="bg_hearst">
-                    <img src="./img/hearst_corp.svg" alt="">
+
+                <div class="col_50">
+                    <div class="logo_box" id="bg_hearst">
+                        <img src="./img/hearst_corp.svg" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="col_50">
-                <div class="logo_box" id="bg_lonely">
-                    <img src="./img/lonely_planet.svg" alt="">
+                <div class="col_50">
+                    <div class="logo_box" id="bg_lonely">
+                        <img src="./img/lonely_planet.svg" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="col_50">
-                <div class="logo_box" id="bg_yellow">
-                    <img src="./img/clear_channel.svg" alt="">
+                <div class="col_50">
+                    <div class="logo_box" id="bg_yellow">
+                        <img src="./img/clear_channel.svg" alt="">
+                    </div>
                 </div>
-            </div>
             </div>
 
             <!-- free trial -->
             <div class="col_100 bg_light-blue">
-            <div class="container">
-                <section class="row padding_top-bottom">
-                    <div class="col_50">
-                        <h2 class="red_text">
-                            Porta Dropbox Business nella tua azienda
-                        </h2>
-                    </div>
+                <div class="container">
+                    <section class="row padding_top-bottom">
+                        <div class="col_50">
+                            <h2 class="red_text">
+                                Porta Dropbox Business nella tua azienda
+                            </h2>
+                        </div>
 
-                    <div class="float_right">
-                        <a class="white_button_lg" href="#">Inizia la tua prova gratuita</a>
-                    </div>
-                    
-                </section>
+                        <div class="float_right">
+                            <a class="white_button_lg" href="#">Inizia la tua prova gratuita</a>
+                        </div>
+                    </section>
+                </div>
             </div>
-            </div>
+            
             </div>
         </div>
-
-       
 
        <!-- question -->
         <div class="container">
@@ -501,16 +509,75 @@
         </div>
 
         <!-- footer -->
-
         <footer class="bg_black">
             <div class="container_lg">
                 <div class="row">
-                    <div class="col_20">Lorem, ipsum dolor.</div>
-                    <div class="col_20">Lorem, ipsum dolor.</div>
-                    <div class="col_20">Lorem, ipsum dolor.</div>
-                    <div class="col_20">Lorem, ipsum dolor.</div>
-                    <div class="col_20">Lorem, ipsum dolor.</div>
-                    <div class="col_20">Lorem, ipsum dolor.</div>
+                    <div class="col_20">
+                        <h4>Dropbox</h4>
+                        <ul class="margin_top2">
+                            <li class="list_footer"><a href="#">Applicazione desktop</a></li>
+                            <li class="list_footer"><a href="#">Perchè Dropbox</a></li>
+                            <li class="list_footer"><a href="#">Piani</a></li>
+                            <li class="list_footer"><a href="#">Sicurezza</a> </li>
+                            <li class="list_footer"><a href="#"> Funzioni</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col_20">
+                        <h4>Prodotti</h4>
+                        <ul class="margin_top2">
+                            <li class="list_footer"><a href="#">Applicazione desktop</a></li>
+                            <li class="list_footer"><a href="#">Perchè Dropbox</a></li>
+                            <li class="list_footer"><a href="#">Piani</a></li>
+                            <li class="list_footer"><a href="#">Sicurezza</a> </li>
+                            <li class="list_footer"><a href="#"> Funzioni</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col_20">
+                        <h4>Azienda</h4>
+                        <ul class="margin_top2">
+                            <li class="list_footer"><a href="#">Applicazione desktop</a></li>
+                            <li class="list_footer"><a href="#">Perchè Dropbox</a></li>
+                            <li class="list_footer"><a href="#">Piani</a></li>
+                            <li class="list_footer"><a href="#">Sicurezza</a> </li>
+                            <li class="list_footer"><a href="#"> Funzioni</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col_20">
+                        <h4>Supporto</h4>
+                        <ul class="margin_top2">
+                            <li class="list_footer"><a href="#">Applicazione desktop</a></li>
+                            <li class="list_footer"><a href="#">Perchè Dropbox</a></li>
+                            <li class="list_footer"><a href="#">Piani</a></li>
+                            <li class="list_footer"><a href="#">Sicurezza</a> </li>
+                            <li class="list_footer"><a href="#"> Funzioni</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col_20">
+                        <h4>Community</h4>
+                        <ul class="margin_top2">
+                            <li class="list_footer"><a href="#">Applicazione desktop</a></li>
+                            <li class="list_footer"><a href="#">Perchè Dropbox</a></li>
+                            <li class="list_footer"><a href="#">Piani</a></li>
+                            <li class="list_footer"><a href="#">Sicurezza</a> </li>
+                            <li class="list_footer"><a href="#"> Funzioni</a></li>
+                        </ul>
+                    </div>
+                    <div class="col_20 margin_top divider">
+
+                        <div class="select_language margin_top2">
+                            <i class="fa-solid fa-earth-americas"></i>
+                    
+                            <select id="languages" name="languages">
+                                <option value="italian">Italiano</option>
+                            </select> 
+
+                            <i class="fa-solid fa-caret-up"></i>
+                        </div>
+                    </div>
                 </div>    
             </div>
         </footer>
