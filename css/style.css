@@ -295,9 +295,6 @@ h6{
     min-width: 700px;
 }
 
-
-   
-
 .dropdown_content_s{
     display: none;
     position: absolute;
@@ -313,10 +310,7 @@ h6{
     text-align: left;
    }
 
-
-
-
- .dropdown:hover .dropdown_content,
+.dropdown:hover .dropdown_content,
 .dropdown:hover .dropdown_content_s {
    display: block;
 }
@@ -472,10 +466,26 @@ h6{
     height: 100px;
 }
 
+/*question section*/
 .border_bottom_question{
     border-bottom: solid 0.5px var(--light);
     padding-top: 2rem;
     padding-bottom: 2rem;
+    position: relative;
 }
 
    
+.answer:hover + .hide{
+    display: block ;
+}
+
+.hide{
+    position: relative;
+    left: 0;
+    top: 0px;
+    display:none;
+    width: 100%;
+    font-size: 0.9rem;
+    color: var(--light_color);
+    font-weight: 300;
+}
