@@ -24,32 +24,126 @@
         <div class="row">
 
             <!-- left nav with logo -->
-            <div class="col_50 padding">
+            <div class="col_50">
                 <!-- menu -->
                 <nav class="nav_with_logo">
-                    <a class="logo">
+                    <a class="logo padding">
                         <img src="./img/logo-small.png" alt="logo">
                     </a>
 
                     <ul>
-                        <li><a href="#"> Perchè Dropbox?</a></li>
-                        <li><a href="#">Funzioni</a></li>
+                        <li class="dropdown  padding">
+                            <a href="#"> Perchè Dropbox?</a>
+
+                            <!--dropwown content -->
+                                <div class="dropdown_content">
+                                    <div class="row">
+                                        <div class="col_30 margin_left">
+                                            <h6>Panoramica</h6>
+                                            <ul>
+                                            <li>Storie di clienti</li> 
+                                            <li>Come integriamo</li>
+                                            <li>Area di lavoro intelligente</li>
+                                            <li>Fai di più che archiviare</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col_30 margin_left">
+                                            <h6>Per settore</h6>
+                                            <ul>
+                                                <li>Storie di clienti</li> 
+                                                <li>Come integriamo</li>
+                                                <li>Area di lavoro intelligente</li>
+                                                <li>Fai di più che archiviare</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col_30 margin_left">
+                                            <h6>Per tipo utente</h6>
+                                            <ul>
+                                                <li>Storie di clienti</li> 
+                                                <li>Come integriamo</li>
+                                                <li>Area di lavoro intelligente</li>
+                                                <li>Fai di più che archiviare</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>        
+                            
+                        <li class="dropdown padding" >
+                            <a href="#">Funzioni</a>
+
+                            <!--dropwown content -->
+                                <div class="dropdown_content">
+                                    <div class="row">
+                                        <div class="col_30 margin_left">
+                                            <h6>Panoramica</h6>
+                                            <ul>
+                                            <li>Storie di clienti</li> 
+                                            <li>Come integriamo</li>
+                                            <li>Area di lavoro intelligente</li>
+                                            <li>Fai di più che archiviare</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col_30 margin_left">
+                                            <h6>Per settore</h6>
+                                            <ul>
+                                                <li>Storie di clienti</li> 
+                                                <li>Come integriamo</li>
+                                                <li>Area di lavoro intelligente</li>
+                                                <li>Fai di più che archiviare</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col_30 margin_left">
+                                            <h6>Per tipo utente</h6>
+                                            <ul>
+                                                <li>Storie di clienti</li> 
+                                                <li>Come integriamo</li>
+                                                <li>Area di lavoro intelligente</li>
+                                                <li>Fai di più che archiviare</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+
                         <li><a href="#">Piani e prezzi</a></li>
                     </ul>
                 </nav>
             </div>
 
             <!-- right nav -->
-            <div class="col_50 padding right_text">
+            <div class="col_50 right_text">
                 <!-- menu -->
                 <nav>
                     <ul>
-                        <li><a href="#">Supporto</a></li>
-                        <li><a href="#">Contatta l'ufficio Vendite</a></li>
+                        <li class="dropdown padding" ><a href="#">Supporto</a>
+
+                             <!--dropwown content -->
+                            <div class="dropdown_content_s">
+                                <ul>
+                                    <li>Centro assistenza</li>
+                                    <li>Forum della community</li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="dropdown padding"><a href="#">Contatta l'ufficio Vendite</a>
+
+                             <!--dropwown content -->
+                            <div class="dropdown_content_s">
+                                <ul>
+                                    <li>Centro assistenza</li>
+                                    <li>Forum della community</li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <!-- log in button -->
                         <li><a href="#">Accedi</a></li>
                     </ul>
                     <a href="#" class="button padding">Inizia</a>
-            </nav>
+                </nav>
             </div>
         </div>
     </header>
@@ -62,6 +156,7 @@
         <div class="bg_light-blue" id="height_vh"> 
             <div class="row">
                 <div class="container_lg">
+                    <div class="margin_top">
                     <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
                     <div class="col_30 margin_top2 paddin_right ">
                         <p>
@@ -71,8 +166,9 @@
                         <div class="margin_top2">
                             <a class="button" href="#">Inizia la tua prova gratuita</a>
                             <p class="font_light">Annulla In qualsiasi momento</p>
-                            <a href="#"><i class="fa-solid fa-arrow-down"></i></a>
+                            <a href="#plan"><i class="fa-solid fa-arrow-down"></i></a>
                         </div>
+                    </div>
                     </div>
                 
 
@@ -88,7 +184,7 @@
 
         <!-- Piano Dropbox -->
 
-        <div class="plan">
+        <div id="plan">
             <div class="container">
                 <div class="row margin_top">
                     <section> 
@@ -98,6 +194,7 @@
                                 <input type="radio" class="radio" name="fatturazione annuale" value="1" checked>
                                 <span>Fatturazione mensile</span>
                             </label>
+                            
                             <label>
                                 <input type="radio" class="radio" name="Fatturazione annuale" value="2">
                                 <span>Fatturazione annuale</span>

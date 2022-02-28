@@ -21,6 +21,13 @@
     display: table;
 }
 
+/*header*/
+.main_header{
+    position: fixed;
+    background-color: var(--primary-color);
+    width: 100%;  
+    
+}
 
 /*background*/
 
@@ -29,7 +36,7 @@
 }
 
 #height_vh{
-    height: 75vh;
+    height: 90vh;
 }
 
 #bg_green{
@@ -135,6 +142,10 @@ h5{
     font-size: 1rem;
 }
 
+h6{
+    font-size: 0.9rem;
+}
+
 .font_light{
     font-weight: 300;
     margin-top: 1rem;
@@ -230,6 +241,11 @@ h5{
 .margin_top2{
     margin-top: 2rem;
 }
+
+.margin{
+    margin:  2rem;
+}
+
 .margin_right{
     margin-right: 50px;
 }
@@ -238,8 +254,12 @@ h5{
     margin-bottom: 4rem;
 }
 
+.margin_left{
+   margin-left: 1rem;
+}
+
 .padding{
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .padding_top-bottom{
@@ -259,6 +279,57 @@ h5{
    padding: 4rem;
 }
 
+/*dropdown Content*/
+
+.dropdown_content{
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 62px;
+    background-color:#F7F5F2;
+    z-index: 1;
+    padding: 1rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 2rem;
+    min-width: 700px;
+}
+
+
+   
+
+.dropdown_content_s{
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 62px;
+    background-color:#F7F5F2;
+    z-index: 1;
+    padding: 1rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 2rem;
+    min-width: 300px;
+    text-align: left;
+   }
+
+
+
+
+ .dropdown:hover .dropdown_content,
+.dropdown:hover .dropdown_content_s {
+   display: block;
+}
+
+
+.dropdown{
+    position: relative;
+    height: 62px;
+}
+
+.dropdown:hover{
+    background-color: #F7F5F2;
+}
 
 /*button*/
 
@@ -284,6 +355,7 @@ h5{
     font-size: 0.9rem;
     margin-bottom: 2rem;
 }
+
 
 .white_button_lg{
     color:var(--secondary-color);
@@ -342,6 +414,20 @@ h5{
     margin-right: 5px;  
 }
 
+/*input radio*/
+
+.radio {
+    appearance:initial;
+    width: 20px;
+    height: 20px;
+    border: solid 1px var(--light);
+    border-radius: 50%;
+    vertical-align: middle;
+    }
+    
+    input[type="radio"]:checked{
+        border: solid 5px var(--blue);
+    }
 
 /*col border*/
 
@@ -393,17 +479,3 @@ h5{
 }
 
    
-/*input radio*/
-
-.radio {
-    appearance:initial;
-    width: 20px;
-    height: 20px;
-    border: solid 1px var(--light);
-    border-radius: 50%;
-    vertical-align: middle;
-    }
-    
-    input[type="radio"]:checked{
-        border: solid 5px var(--blue);
-    }
